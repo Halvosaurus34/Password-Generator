@@ -14,6 +14,8 @@ ___
 [Daniel Cabellos](https://github.com/shibeknight) GitHub.
 ___
 ## Links
+[Website Screenshot](Assets/screenshot.PNG)
+
 [GitHub Repository](https://github.com/Halvosaurus34/Password-Generator)
 ___
 [My Password Generator](https://halvosaurus34.github.io/Password-Generator/)
