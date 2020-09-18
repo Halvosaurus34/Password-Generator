@@ -20,6 +20,10 @@ if (hasSpecial) finalCharSet += '!@#$%^&*+='
 password = ''
 
 // Write password to the #password input
+if ( finalCharSet.length <=1){
+  alert("You must choose at least one password criteria!")
+  writePassword()
+} else {
     if ( passLength > 7 && passLength < 129){
       for (var i=0;i<passLength; i++){
         var pass = Math.floor(Math.random() * finalCharSet.length)
@@ -29,7 +33,7 @@ password = ''
       alert("Password needs to be between 8 - 128")
       writePassword()
     }
-
+  }
 passwordText.value = password;
 
 }
