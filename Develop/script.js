@@ -1,6 +1,6 @@
-// Assignment Code
 var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", writePassword);
+// sends password to text box
 var passwordText = document.querySelector("#password");
 
 function writePassword() {
@@ -12,6 +12,7 @@ var hasLower = confirm("Do you want Lowercase Letters?");
 var hasNumber = confirm("Do you want Numbers?");
 var hasSpecial = confirm("Do you want Special Characters?");
 
+//adds charset to final if true
 var finalCharSet = '';
 if (hasUpper) finalCharSet += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 if (hasLower) finalCharSet += 'abcdefghijklmnopqrstuvwxyz'
@@ -19,7 +20,7 @@ if (hasNumber) finalCharSet += '1234567890'
 if (hasSpecial) finalCharSet += '!@#$%^&*+='
 password = ''
 
-// Write password to the #password input
+//picks random character for every index of password length
 if ( finalCharSet.length <=1){
   alert("You must choose at least one password criteria!")
   writePassword()
@@ -38,4 +39,3 @@ passwordText.value = password;
 
 }
 
-// Add event listener to generate button
